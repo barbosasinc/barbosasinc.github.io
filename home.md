@@ -1,3 +1,3 @@
 layout: page
 title: "Home"
-permalink: /home
+permalink: https://barbosasinc.github.io/home
