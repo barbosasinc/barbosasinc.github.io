@@ -1,197 +1,42 @@
 <!DOCTYPE html>
-
-<html lang="fr">
-
+<html lang="en">
 <head>
-
-  <link href="css/screen.css" rel="stylesheet" media="screen" type="text/css">
-
-    <link href="css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
-
-    <title>Cshar!Collective Sharing</title>
-
-
-
-    <META NAME="DESCRIPTION" CONTENT="site web de partage collectif, Web Site for collective Partage">
-
-    <META NAME="ABSTRACT" CONTENT="site web de partage collectif, Web Site for collective Partage">
-
-    <META NAME="KEYWORDS" CONTENT="Sharing,Partage,Collectif,Fichier,Groupe,Collective sharing, partage collectif,">
-
-    <META NAME="REVISIT-AFTER" CONTENT="20 Days">
-
-    <META NAME="ROBOT" CONTENT="Index,Follow">
-
-    <META NAME="RATING" CONTENT="general">
-
-    <METa NAME="AUTHOR" CONTENT="Dahhane Ayyoub">
-
-
-
-<link href="uploadify/uploadify.css" type="text/css" rel="stylesheet" />
-
-<script type="text/javascript" src="uploadify/jquery-1.4.2.min.js"></script>
-
-<script type="text/javascript" src="uploadify/swfobject.js"></script>
-
-<script type="text/javascript" src="uploadify/jquery.uploadify.v2.1.4.min.js"></script>
-
-<script type="text/javascript">
-
-$(function() {
-
-  $('#file_upload').uploadify({
-
-    'uploader'  : 'uploadify/uploadify.swf',
-
-    'script'    : 'uploadify/uploadify.php',
-
-    'cancelImg' : 'uploadify/cancel.png',
-
-    'folder'    : '/siteweb/test/users/musique/Rap',
-
-    'fileExt'   : '*.jpg;*.gif;*.png;*.pdf',
-
-    'sizeLimit' : 1024000000,
-
-    'onAllComplete' : function(event,data) {
-
-        alert("yes");
-
-      document.getElementByID('form_id').submit();
-
-    }
-
-  });
-
-});
-
-</script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbo SA</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<header>
-
-    <div id="head"></div>
-
-   <a href="#"><div id="banner"></div></a>
-
-    <div id="authentication-link">
-
-        <div class="authentication">
-
-               <p>Bienvenue  musique<a href="?c=Member&a=disconnect">se Deconnecter</a> </p>
-
-        </div>        <nav><a href="index.php" >Accueil</a>
-
-         <a href="?c=index&a=presentation" >Pr&eacute;sentation</a>
-
-            <a href="?c=index&a=account" >Compte</a>
-
-             <a href="?c=index&a=contact" >Contactez-nous</a>
-
-         <a href="?c=index&a=faq" >F.A.Q</a>
-
-    </nav>
-
-   
-
-
-
-        </div>
-
-</header>
-
-
-
-<div id="contener">
-
-<div class="clear"></div>
-
-
-
-<section>
-
-
-
-   <div id="inscription">
-
-              <div id="search-area">
-
-               <input type="search" name="search" placeholder="Recherche" id="search-query"/>
-
-               <div id="search-result"></div>
-
-           </div>
-
-           <div id="menu-groups">
-
-               <h2>Groupes</h2>
-
-               <ul>
-
-                   <li><a href="?c=groups&a=myGroups">Vos Groupes</a> </li>
-
-                   <li><a href="?c=groups&a=add">Cr&eacute;er Groupe</a> </li>
-
-                   <li><a href="?c=groups&a=others">Autres Groupes</a> </li>
-
-               </ul>
-
-           </div>
-
-        </div>
-
-    <div id="separator"></div>
-
-    <article>
-
-        <h4>Groupes > Cr&eacute;er Groupe</h4>
-
-        <form method="POST" action="/SiteWeb/test?c=File" id="form_id">
-
-<fieldset id="file-form">
-
-  <legend>Nouveau fichier</legend>
-
-    
-
-  <input type="text" name="file-name" id="file-name" placeholder="Nom du fichier (Description)">
-
-
-
-  <input id="file_upload" name="file_upload" type="file" />
-
-
-
-    <div class="input text">
-
-      <input type="button" id="valid" name="valider" value="submit" onclick="javascript:$('#file_upload').uploadifyUpload()">
-
-
-
-    </div>
-
-</fieldset>
-
-</form>
-
-    </article>
-
-
-
-</section>
-
-<div class="clear"></div>
-
-    </div>
-
-<footer><p>Tous droits r&eacute;s&eacute;rv&eacute;s &agrave; Cshar.com &copy; 2011 - <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">WebMaster</a></p></footer>
-
-
-
+    <header>
+        <h1>Welcome to Your Barbo SA</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Barbo SA Develops software solutions for small and medium-sized companies. </p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Desktop Aplication</li>
+                <li>Mobile Apps</li>
+                <li>Web Api</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Barbo SA </p>
+    </footer>
 </body>
-
 </html>
