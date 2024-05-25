@@ -22,11 +22,11 @@ nav a {
 
 ul {
 
-  display: flex;
+  
   list-style: none;
   gap: .8rem;
   justify-content: space-between;
-  align-items: center;
+  
 
 }
 
