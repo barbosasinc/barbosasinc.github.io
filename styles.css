@@ -20,6 +20,16 @@ nav a {
     text-decoration: none;
 }
 
+ul {
+
+  display: flex;
+  list-style: none;
+  gap: .8rem;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 nav a:hover {
     background-color: #ddd;
     color: black;
