@@ -46,3 +46,12 @@ row:after {
     display: table;
     clear: both;
 }
+
+.contact{
+  display: flex;
+  color: white;
+  background-color: black;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+}
